@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="rockPaperScissors.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <ul class="list">
+            <li class="rock action" onclick="playerSelect('rock')"><i class="fa-regular fa-hand-back-fist"></i></li>
+            <li class="paper action" onclick="playerSelect('paper')"><i class="fa-regular fa-hand"></i></li>
+            <li class="scissor action" onclick="playerSelect('scissor')"><i class="fa-solid fa-scissors"></i></li>
+        </ul>
+    </div>
+
+    <div class="result">
+        <p style="font-size: 32px; font-weight: 700;" id="res"></p>
+        <div>Player: <span id="score__player">0</span> - Computer: <span id="score__com">0</span>
+        </div>
+    </div>
+</body>
+</html>
